@@ -26,7 +26,6 @@ function Tags({ job }) {
 }
 
 function Job({ job }) {
-  console.log(job);
   return (
     <Link href="#">
       <div className="pr-3 flex items-center justify-between">
