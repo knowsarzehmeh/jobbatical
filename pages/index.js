@@ -1,12 +1,10 @@
 import Head from "next/head";
-import { dehydrate, useQuery } from "@tanstack/react-query";
+import { dehydrate } from "@tanstack/react-query";
 import { fetchJobs, queryClient } from "../server/api";
 import Header from "../components/Header";
+import Jobs from "../components/Jobs";
 
 export default function Home() {
-  const { data } = useQuery(["jobs"], () => fetchJobs());
-
-  console.log(data);
   return (
     <div>
       <Head>
@@ -17,6 +15,7 @@ export default function Home() {
 
       <main>
         <Header />
+        <Jobs />
       </main>
     </div>
   );

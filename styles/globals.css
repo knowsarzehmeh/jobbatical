@@ -6,4 +6,9 @@
   .clippy {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   }
+
+  .custom-border {
+    border-radius: 0% 69% 100% 0% / 58% 0% 100% 30%;
+    /* border-radius: 0% 0% 100% 18% / 58% 14% 93% 7%; */
+  }
 }
